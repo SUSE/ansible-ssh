@@ -57,7 +57,7 @@ The suggested format is `NN-name`, where `NN` is two-digit number used for
 sorting the and `name` is any descriptive name for the content or the owner
 of the file.
 
-### ssh dict
+### ssh_dict
 
 A dict containing configuration options and respective values. See example
 below.
