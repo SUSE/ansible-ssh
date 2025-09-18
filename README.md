@@ -31,14 +31,14 @@ not keep comments and order of the options).
 
 ### ssh_user
 
-By default (`null`) the role will modify the global configuration for all
+By default (`null`) the variable will modify the global configuration for all
 users. Other values will be interpreted as a username and the role will
 modify per-user configuration stored under `~/.ssh/config` of the given user.
 The user needs to exist before invoking this role otherwise it will fail.
 
 ### ssh_skip_defaults
 
-By default (`auto`), the role writes the system-wide configuration file
+By default (`auto`), the variable writes the system-wide configuration file
 `/etc/ssh/ssh_config` and keeps OS defaults defined there (*true*). This is
 automatically disabled, when a drop-in configuration file is created
 (`ssh_drop_in_name!=null`) or when per-user configuration file is created
@@ -70,7 +70,7 @@ above.
 
 ### ssh_additional_packages
 
-This role automatically installs packages needed for most common use cases
+This variable automatically installs packages needed for most common use cases
 on given platform. If some additional packages need to be installed (for
 example `openssh-keysign` for host-based authentication), they can be specified
 in this variable.
